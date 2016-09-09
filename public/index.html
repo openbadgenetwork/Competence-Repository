@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de" ng-app="repoApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competence Repository</title>
+    <!-- load bootstrap and fontawesome via CDN-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
+
+    <!-- load Angular UI Tree -->
+    <link rel="stylesheet" href="bower_components/angular-ui-tree/dist/angular-ui-tree.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <!-- HEADER AND NAVBAR -->
+  <header>
+      <nav class="navbar navbar-default">
+      <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="/">Competence Repository</a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+              <li><a href="#search"><i class="fa fa-search"></i> Search</a></li>              
+              <li><a href="#url"><i class="fa fa-plus"></i> Add URL</a></li>
+              <li><a href="#form"><i class="fa fa-comment"></i> New Entry</a></li>
+              <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+          </ul>
+      </div>
+      </nav>
+  </header>
+
+
+  <!-- MAIN CONTENT AND INJECTED VIEWS -->
+  <div id="main">
+      <!-- inject content -->
+      <div ng-view></div>
+  </div>
+
+
+
+
+
+  <!-- load angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="app.js"></script>
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Angular UI Tree -->
+  <script type="text/javascript" src="bower_components/angular-ui-tree/dist/angular-ui-tree.js"></script>
+  <!-- Bootstrap JS-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

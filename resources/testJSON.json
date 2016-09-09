@@ -1,0 +1,20 @@
+{
+	"id": "www.test-competence.de",
+	"title": "Name Test",
+	"description": "Description Test",
+	"locType": "locstructure",
+	"children": [
+		{
+			"id": "www.test-competence2.de",
+			"title": "Name Test2",
+			"description": "Description Test2",
+			"locType": "locdefinition"
+		},
+		{
+			"id": "www.test-competence3.de",
+			"title": "Name Test3",
+			"description": "Description Test3",
+			"locType": "locdefinition"
+		}
+	]
+}

@@ -1,0 +1,74 @@
+
+<div class="container">
+
+
+	<div class="col-md-6 col-md-offset-3">
+
+		<div class="page-header">
+			<h1>Add new Entry</h1>
+		</div>	
+
+		<div class="alert alert-success alert-dismissible" role="alert" ng-show="message">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>Success</strong>
+		  {{ message }}
+		</div>
+
+
+		
+		<!-- Form -->
+    	<form ng-submit="processForm()" role="form">
+    		
+    			<label for="basic-url">Title</label>
+	    		<div class="input-group">    		    
+	    			<input  class="form-control" type="text" id="name" name="name" placeholder="Name" ng-model="formData.title"></input>
+	    			<span class="help-block" ng-show="errorName">{{ errorName }}</span>
+	    		</div><br>
+
+	    		<label for="basic-url">Description</label>
+	    		<div class="input-group">    
+	    			<input  class="form-control" type="text" id="description" name="description" placeholder="Description" ng-model="formData.description"></input>
+	    		</div><br>
+
+	    		<div ng-repeat="loc in locs">
+	    			<div class="panel panel-default">
+	    				<div class="panel-heading">						   
+						   <button type="button" class="close" class="remove" aria-label="Close"
+						    ng-click="removeChoice($index)"><span aria-hidden="true">&times;</span></button>
+						    <h3 class="panel-title">LOC {{$index+1}}</h3>
+						</div>
+						<div class="panel-body">
+							<label for="basic-url">LOC Type</label>
+
+			    			<div class="input-group">    
+			    			<label class="radio-inline"><input type="radio" value="locdefinition" ng-model="loc.locType" selected>LOCdefinition</label>
+
+			    			<label class="radio-inline"><input type="radio" value="locstructure" ng-model="loc.locType">LOCstructure</label>
+			    			</div><br>
+
+						    <label for="basic-url">Title</label>
+				    		<div class="input-group">    		    
+				    			<input  class="form-control" type="text" id="name" name="name" placeholder="Test" ng-model="loc.title"></input>
+				    		</div><br>
+
+				    		<label for="basic-url">Description</label>
+				    		<div class="input-group">    
+				    			<input  class="form-control" type="text" id="description" name="description" placeholder="Description" ng-model="loc.description"></input>
+				    		</div><br>
+						</div>
+					</div>
+	    		</div>
+
+
+
+   			 <!-- add LOC-->
+    		<button class="btn btn-default" ng-click="addLOC()">Add LOC</button>   		
+    		
+
+    		<!-- submit button -->
+    		<button type="submit" class="btn btn-success">Submit!</button>
+
+    	</form>
+    </div>
+
+    <br><br>
+</div>
