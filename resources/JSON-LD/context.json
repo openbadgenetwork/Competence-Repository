@@ -1,0 +1,74 @@
+  {
+    "abbr": 
+    {
+      "@id": "http://purl.org/net/inloc/abbr",
+      "@container": "@language"
+    },
+    "combinationRules": 
+    {
+      "@id": "http://purl.org/net/inloc/combinationRules",
+      "@container": "@language"
+    },
+    "created": 
+    {
+      "@id": "http://purl.org/net/inloc/created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "description": 
+    {
+      "@id": "http://purl.org/net/inloc/description",
+      "@container": "@language"
+    },
+    "issued": 
+    {
+      "@id": "http://purl.org/net/inloc/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "label": 
+    {
+      "@id": "http://purl.org/net/inloc/label",
+      "@container": "@language"
+    },
+    "modified": 
+    {
+      "@id": "http://purl.org/net/inloc/modified",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "number":
+    {
+      "@id": "http://purl.org/net/inloc/number",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal" 
+    },
+    "rights": 
+    {
+      "@id": "http://purl.org/net/inloc/rights",
+      "@container": "@language"
+    },
+    "title": 
+    {
+      "@id": "http://purl.org/net/inloc/title",
+      "@container": "@language"
+    },
+    "validityEnd": 
+    {
+      "@id": "http://purl.org/net/inloc/validityEnd",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "validityStart": 
+    {
+      "@id": "http://purl.org/net/inloc/validityStart",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasLOCpart":
+    {
+      "@id": "http://purl.org/net/inloc/hasLOCpart",
+      "@type": "@id"
+    },
+    "@vocab": "http://purl.org/net/inloc/",
+    "subPropertyOf":
+    {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type": "@id"
+    },
+    "comment": null
+  }

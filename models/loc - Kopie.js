@@ -7,14 +7,15 @@ var LOCSchema = mongoose.Schema({
 	id: { 
 		type: String, 
 		required: true,
-		index: true
+		index: true,
+		unique: true
 	},
     type: String,
     title: String,
-    description: {},
+    description: String,
     abbr: String,
     extraID: String,
-    language: {type: String, max: 2},
+    lang: {type: String, max: 2},
     furtherInformation: String,
     rights: String,
     version: String,

@@ -1,18 +1,37 @@
 {
-  "name": "microdata-scraper",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "competence-repository",
+  "version": "0.0.1",
+  "description": "Searchable Repository for Competencies and Competence Frameworks.",
+  "keywords": [
+    "competence",
+    "microdata",
+    "neo4j"
+  ],
   "author": "Christian Mehns",
   "license": "ISC",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "node-dev app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "mongodb": "^2.2.8",
-    "mongoose": "^4.5.10",
-    "neo4j": "^1.1.1"
+    "jsonld": "^0.4.11",
+    "mongoose": "^4.6.1",
+    "morgan": "^1.7.0",
+    "neo4j": "^1.1.1",
+    "node-microdata-parser": "0.0.1",
+    "node-microdata-scraper": "0.0.4",
+    "node-neo4j": "^2.0.3",
+    "scrappy": "^0.2.3",
+    "semantic-schema-parser": "^0.1.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "node-dev": "^3.1.3"
   }
 }

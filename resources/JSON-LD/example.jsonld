@@ -1,0 +1,299 @@
+{
+  "@context": 
+  {
+    "abbr": 
+    {
+      "@id": "http://purl.org/net/inloc/abbr",
+      "@container": "@language"
+    },
+    "combinationRules": 
+    {
+      "@id": "http://purl.org/net/inloc/combinationRules",
+      "@container": "@language"
+    },
+    "created": 
+    {
+      "@id": "http://purl.org/net/inloc/created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "description": 
+    {
+      "@id": "http://purl.org/net/inloc/description",
+      "@container": "@language"
+    },
+    "issued": 
+    {
+      "@id": "http://purl.org/net/inloc/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "label": 
+    {
+      "@id": "http://purl.org/net/inloc/label",
+      "@container": "@language"
+    },
+    "modified": 
+    {
+      "@id": "http://purl.org/net/inloc/modified",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "number":
+    {
+      "@id": "http://purl.org/net/inloc/number",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal" 
+    },
+    "rights": 
+    {
+      "@id": "http://purl.org/net/inloc/rights",
+      "@container": "@language"
+    },
+    "title": 
+    {
+      "@id": "http://purl.org/net/inloc/title",
+      "@container": "@language"
+    },
+    "validityEnd": 
+    {
+      "@id": "http://purl.org/net/inloc/validityEnd",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "validityStart": 
+    {
+      "@id": "http://purl.org/net/inloc/validityStart",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasLOCpart":
+    {
+      "@id": "http://purl.org/net/inloc/hasLOCpart",
+      "@type": "@id"
+    },
+    "@vocab": "http://purl.org/net/inloc/",
+    "subPropertyOf":
+    {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type": "@id"
+    },
+    "comment": null
+  },
+  "@graph":
+  [
+    {
+      "@type": "LOCstructure",
+      "@id": "http://www.example.com/abilities/winegrower/1",
+      "@language": "en",
+      "title":
+      {
+        "en": "Wine grower (m/f)",
+        "de": "Winzer/Winzerin"
+      },
+      "description":
+      {
+        "en": "Structure of the skills and competences required for the Final examination in the state-recognized training occupation: Wine grower (m/f)"
+      },
+      "comment": 
+      [
+        "note: This is presented as if it were a structure owned by this German agency.",
+        "While the content is taken from the document referenced,",
+        "it has been created as part of the InLOC project:",
+        "see http://wiki.teria.no/display/inloc/Home",
+        "and is based on work done for the eCOTOOL project:",
+        "see http://www.competencetools.eu/"
+      ],
+      "furtherInformation": "http://www.bibb.de/redaktion/ze/en/winzer_e.pdf",
+      "rights":
+      {
+        "de": "© Bundesagentur für Arbeit",
+        "en": "© Federal Employment Agency"
+      },
+      "created": "2010-08-17T00:00:00",
+      "version": "2.0",
+      "publisher": 
+      {
+        "@id": "http://www.arbeitsagentur.de/"
+      },
+      "contributor":
+      [
+        {
+    	"label": {"it":"Chiara Carlino"}
+        },
+        {
+    	"label": {"en":"Simon Grant"}
+        }
+      ],
+      "level":
+      {
+        "hasScheme": {
+          "@id": "http://www.uis.unesco.org/Education/Pages/international-standard-classification-of-education.aspx",
+          "label": {"en":"ISCED 2011"}
+        },
+        "hasObject": {
+          "@id": "http://www.uis.unesco.org/Education/ISCED/2011#35",
+          "comment": "this identifier is invented here",
+          "label": {"en":"ISCED level 3, Vocational (35)"}
+        },
+        "number": "3"
+      },
+      "hasLOCpart":
+      [
+        "http://www.example.com/abilities/winegrower/109",
+        "http://www.example.com/abilities/winegrower/111",
+        "http://www.example.com/abilities/winegrower/113",
+        "http://www.example.com/abilities/winegrower/115",
+        "http://www.example.com/abilities/winegrower/117",
+        "http://www.example.com/abilities/winegrower/119",
+        "http://www.example.com/abilities/winegrower/121",
+        "http://www.example.com/abilities/winegrower/123",
+        "http://www.example.com/abilities/winegrower/125",
+        "http://www.example.com/abilities/winegrower/127",
+        "http://www.example.com/abilities/winegrower/129",
+        "http://www.example.com/abilities/winegrower/131",
+        "http://www.example.com/abilities/winegrower/133"
+      ]
+    },
+    {
+      "@id": "http://www.example.com/abilities/winegrower/109",
+      "@type": "LOCdefinition",
+      "description": {"en":"Cultivate and tend vines for the purpose of growing grapes"}
+    },
+    {
+      "@id": "http://www.example.com/abilities/winegrower/111",
+      "@type": "LOCdefinition",
+      "description": {"en":"Make wine using oenological processes"},
+      "category":
+      [
+        {
+          "hasScheme":
+          {
+            "@id": "http://en.wikipedia.org/wiki/Statistical_Classification_of_Economic_Activities_in_the_European_Community",
+            "label": {"en":"NACE"}
+          },
+          "hasObject":
+          {
+            "extraID": "11.02",
+            "label": {"en":"Manufacture of wine from grape"}
+          }
+        },
+        {
+          "hasScheme": 
+          {
+            "@id": "http://aims.fao.org/aos/agrovoc/c_7644",
+            "label": {"en": "AGROVOC technology"}
+          },
+          "hasObject":
+          {
+            "@id": "http://aims.fao.org/aos/agrovoc/c_8405",
+            "label": {"en":"Winemaking"}
+          }
+        }
+      ]
+    },
+    {
+      "@id": "http://www.example.com/abilities/winegrower/113",
+      "@type": "LOCdefinition",
+      "description": {"en":"Make other products from grapes and wine"}
+    },
+    {
+      "@id": "http://www.example.com/abilities/winegrower/115",
+      "@type": "LOCdefinition",
+      "description": {"en":"Handle and maintain machinery, plants and company equipment and be aware of and assess processes"},
+      "topic":
+      {
+        "hasScheme":
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_330919",
+          "label": {"en":"AGROVOC objects"}
+        },
+        "hasObject":
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_25770",
+          "label": {"en":"Winemaking equipment"}
+        }
+      }
+    },
+    {
+      "@id": "http://www.example.com/abilities/winegrower/117",
+      "@type": "LOCdefinition",
+      "description": {"en":"Procure and evaluate information"}
+    },
+    {
+      "@id": "http://www.example.com/abilities/winegrower/119",
+      "@type": "LOCdefinition",
+      "description": {"en":"Work and tend the soil to maintain sustainable fertility"}
+    },
+    {
+      "@id": "http://www.example.com/abilities/winegrower/121",
+      "@type": "LOCdefinition",
+      "description": {"en":"Plant, tend and use vines with in a quality oriented manner and in accordance with environmental considerations"}
+    },
+    {
+      "comment": "this LOC definition has fictional italian and further information from eCOTOOL and from InLOC",
+      "@id": "http://www.example.com/abilities/winegrower/123",
+      "@type": "LOCdefinition",
+      "description":
+      {
+        "en":"Fill, label and pack wine",
+        "it": "Riempire, etichettare e impacchettare il vino"
+      },
+      "furtherInformation": 
+      [
+        {
+          "@language": "en",
+          "@value":"\n<div><p>Filling, labelling and packing wine may involve operating relevant specialist machinery.<\/p>\n<ul>\n<li>For large wine producers, the process will be largely automated, and the competence will involve extensive knowledge of the operation of the automatic machinery.<\/li>\n<li>For small wine producers, each process may be separate and done manually, either by one person or by a team working together.<\/li>\n<\/ul>\n<p>In all cases, a person with this overall competence will take responsibility for ensuring that the wine is correctly labelled, and the labels on the wine corresponds to the label on the packs; and for ensuring that the whole process complies with relevant health and safety and trading standards regulations.<\/p>\n<\/div>\n"
+        },
+        {
+          "@language": "it",
+          "@value": "Riempire, etichettare e impacchettare il vino può richiedere l'uso di macchinari specialistici. Per produttori di vino su larga scala, il progesso sarà in gran parte automatizzato e la competenza includerà un'ampia conoscenza dell'operatività dei macchinari. Per piccoli produttori, ogni processo potrebbe essere separato e compiuto manualmente, da una persona o da una squadra. In ogni caso, una persona con questa competenza complessiva avrà la responsabilità di assicurarsi che il vino sia correttamente etichettato e che le etichette sul vino corrispondano a quelle sui pacchi; sarà inoltre responsabile di assicurarsi che l'intero processo si svolga in osservazione dei regolamenti standard di sicurezza salute e commercio."
+        },
+        {
+          "@language": "en",
+          "@value": "There is no restriction on having multiple further information elements in the same language, but in this model, no extra attributes are allowed. To have extra attributes would need a more complex graph."
+        }
+      ]
+    },
+    {
+      "@id": "http://www.example.com/abilities/winegrower/125",
+      "@type": "LOCdefinition",
+      "description": {"en":"Assess and present wine"}
+    },
+    {
+      "@id": "http://www.example.com/abilities/winegrower/127",
+      "@type": "LOCdefinition",
+      "description": {"en":"Market wine and other products"}
+    },
+    {
+      "@id": "http://www.example.com/abilities/winegrower/129",
+      "@type": "LOCdefinition",
+      "description": {"en":"Advise customers"}
+    },
+    {
+      "@id": "http://www.example.com/abilities/winegrower/131",
+      "@type": "LOCdefinition",
+      "description": {"en":"Comply with national and EU statutory regulations"}
+    },
+    {
+      "@id": "http://www.example.com/abilities/winegrower/133",
+      "@type": "LOCdefinition",
+      "description": {"en":"Execute work activities in an autonomous manner according due consideration to the principles of nature\nand environmental conservation, safety, health and safety at work and workplace ergonomics"}
+    },
+    {
+      "@id": "http://www.arbeitsagentur.de/",
+      "label":
+      {
+        "en": "Federal Employment Agency",
+        "de": "Bundesagentur für Arbeit"
+      }
+    },
+    {
+      "@id": "publisher", 
+      "label": {"en": "Publisher"},
+      "subPropertyOf": "http://purl.org/net/inloc/by"
+    },
+    {
+      "@id": "contributor", 
+      "subPropertyOf": "http://purl.org/net/inloc/by"
+    }
+  ]
+}
+
+
+
+

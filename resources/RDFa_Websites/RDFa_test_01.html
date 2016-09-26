@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de" ng-app="repoApp">
+  <head>
+    <meta charset="utf-8">
+  </head>
+<body>
+
+<!-- in this version the micro-data is not nested, but connected through associations -->
+
+  
+<!-- e-CF -->
+<div itemscope itemtype="http://schema.org/LOCstructure">
+  <meta itemprop="id" content="eu.ecompetences.ecf">
+  <h1 itemprop="title">e-Competence Framework</h1>
+  <span itemprop="abbr">e-CF</span>
+  <span itemprop="language" content="en">English</span>
+
+  <p itemprop="description">The European e-Competence Framework (e-CF) is a reference framework of ICT competences that can be used and understood by ICT user and supply companies, ICT practitioners, managers and HR departments, the public sector, educational and social partners across Europe.</p>
+
+  <span itemprop="issued" content="2010-09">September, 2010</span>
+  <span itemprop="version">2.0</span>
+</div><!-- END e-CF -->
+
+
+<!-- Area A -->
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+      <h2 itemprop="id" content="A">Area A</h2>
+      <h3 itemprop="title">PLAN</h3>
+</div>
+
+<!-- Area B -->
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+      <h2 itemprop="id" content="B">Area B</h2>
+      <h3 itemprop="title">BUILD</h3>
+</div>
+
+<!-- Area C -->
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+      <h2 itemprop="id" content="C">Area C</h2>
+      <h3 itemprop="title">RUN</h3>
+</div>
+
+<!-- Area D -->
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+      <h2 itemprop="id" content="D">Area D</h2>
+      <h3 itemprop="title">ENABLE</h3>
+</div>
+
+<!-- Area E -->
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+      <h2 itemprop="id" content="E">Area E</h2>
+      <h3 itemprop="title">MANAGE</h3>
+</div>
+
+
+<!-- Competence A.1 -->
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+  <h4>
+    <span itemprop="id">A.1</span>
+    <span itemprop="title">IS and Business Strategy Alignment</span>
+  </h4>
+  <p itemprop="description">Anticipates long term business requirements, influences improvement of organisational process efficiency and effectivenes. Determines the IS model and the enterprise architecture in line with the organisation’s policy and ensures a secure environment. Makes strategic IS policy decisions for the enterprise, including sourcing strategies. </p>
+</div>
+
+
+<!-- Competence A.2 -->
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+  <h4>
+    <span itemprop="id" content="http://www.ecompetences.eu/e-cf#A.2">A.2</span>
+    <span itemprop="title">Service Level Management</span>
+  </h4>
+  <p itemprop="description">Defines, validates and makes applicable service level agreements (SLA) and underpinning contracts for services offered. Negotiates service performance levels taking into account the needs and capacity of customers and business.</p>
+</div>
+
+
+<!-- Competence A.3 -->
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+  <h4>
+    <span itemprop="id">A.3</span>
+    <span itemprop="title">Business Plan Development</span>
+  </h4>
+  <p itemprop="description">Addresses the design and structure of a business or product plan including the identification of alternative approaches as well as return on investment propositions. Considers the possible and applicable sourcing models. Presents cost benefit analysis and reasoned arguments in support of the selected strategy. Ensures compliance with business and technology strategies. Communicates and sells business plan to relevant stakeholders and addresses political, financial, and organisational interests</p>
+</div>
+
+
+<!-- Competence A.4 -->
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+  <h4>
+    <span itemprop="id">A.4</span>
+    <span itemprop="title">Product / Service Planning</span>
+  </h4>
+  <p itemprop="description">Analyses and defines current and target status. Estimates cost effectiveness, points of risk, opportunities, strengths and weaknesses, with a critical approach. Creates structured plans; establishes time scales and milestones, ensuring optimisation of activities and resources. Manages change requests. Defines delivery quantity and provides an overview of additional documentation requirements. Specifies correct handling of products, including legal issues, in accordance with current regulations. </p>
+</div>
+
+
+
+
+<!-- ______________LEVELS_____________ -->
+
+<!-- Level A.1_L4 -->
+<div itemscope itemtype="http://schema.org/LOCassociation">
+  <div itemprop="associationType" content="http://schema.org/level">
+    <div itemscope itemprop="hasSubject" itemtype="http://schema.org/subject">
+      <meta itemprop="id" content="eu.ecompetences.ecf">
+    </div>
+    <div itemscope itemprop="hasScheme" itemtype="http://schema.org/scheme">
+      <meta itemprop="id" content="http://schema.org/LOCrel">
+    </div>
+    <div itemscope itemprop="hasObject" itemtype="http://schema.org/object">
+      <meta itemprop="id" content="A">
+    </div>
+  </div>
+</div>
+
+
+
+
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+  <h4 itemprop="id">A.2_L3</h4>
+  <p itemprop="description">Influences and prepares the final Service Level Agreement (SLA) and accounts for the final content.</p>
+</div>
+
+
+<!-- Level A.2_L3 -->
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+  <h4 itemprop="id">A.2_L3</h4>
+  <p itemprop="description">Influences and prepares the final Service Level Agreement (SLA) and accounts for the final content.</p>
+</div>
+
+
+
+
+<!-- Area A association -->
+<div itemscope itemtype="http://schema.org/LOCassociation">
+  <div itemprop="associationType" content="http://schema.org/LOCrel">
+    <div itemscope itemprop="hasSubject" itemtype="http://schema.org/subject">
+      <meta itemprop="id" content="eu.ecompetences.ecf">
+    </div>
+    <div itemscope itemprop="hasScheme" itemtype="http://schema.org/scheme">
+      <meta itemprop="id" content="http://schema.org/LOCrel">
+    </div>
+    <div itemscope itemprop="hasObject" itemtype="http://schema.org/object">
+      <meta itemprop="id" content="A">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Competence A.2 association -->
+<div itemscope itemtype="http://schema.org/LOCassociation">
+  <div itemprop="associationType" content="http://schema.org/LOCrel">
+    <div itemscope itemprop="hasSubject" itemtype="http://schema.org/subject">
+      <meta itemprop="id" content="A">
+    </div>
+    <div itemscope itemprop="hasScheme" itemtype="http://schema.org/scheme">
+      <meta itemprop="id" content="http://schema.org/LOCrel">
+    </div>
+    <div itemscope itemprop="hasObject" itemtype="http://schema.org/object">
+      <meta itemprop="id" content="A.2">
+    </div>
+  </div>
+</div>
+    
+
+<!-- Level A.2_L3 association -->
+<div itemscope itemtype="http://schema.org/LOCassociation">
+  <div itemprop="associationType" content="http://schema.org/LOCrel">
+    <div itemscope itemprop="hasSubject" itemtype="http://schema.org/subject">
+      <meta itemprop="id" content="A.2">
+    </div>
+    <div itemscope itemprop="hasScheme" itemtype="http://schema.org/scheme">
+      <meta itemprop="id" content="http://schema.org/hasDefinedLevel">
+    </div>
+    <div itemscope itemprop="hasObject" itemtype="http://schema.org/object">
+      <meta itemprop="id" content="A.2_L3">
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

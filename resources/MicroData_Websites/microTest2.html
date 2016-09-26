@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de" ng-app="repoApp">
+  <head>
+    <meta charset="utf-8">
+  </head>
+<body>
+
+<!-- in this version the micro-data is not nested, but connected through associations -->
+
+  
+<!-- e-CF -->
+<div itemscope itemtype="http://schema.org/LOCstructure">
+  <meta itemprop="id" content="eu.ecompetences.ecf">
+  <h1 itemprop="title">e-Competence Framework</h1>
+  <span itemprop="abbr">e-CF</span>
+  <span itemprop="language" content="en">English</span>
+
+  <p itemprop="description">The European e-Competence Framework (e-CF) is a reference framework of ICT competences that can be used and understood by ICT user and supply companies, ICT practitioners, managers and HR departments, the public sector, educational and social partners across Europe.</p>
+
+  <span itemprop="issued" content="2010-09">September, 2010</span>
+  <span itemprop="version">2.0</span>
+</div><!-- END e-CF -->
+
+
+<!-- Area A -->
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+      <h2 itemprop="id" content="A">Area A</h2>
+      <h3 itemprop="title">PLAN</h3>
+</div><!-- END Area A -->
+
+
+<!-- Competence A.2 -->
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+  <h4>
+    <span itemprop="id">A.2</span>
+    <span itemprop="title">Service Level Management</span>
+  </h4>
+  <p itemprop="description">Defines, validates and makes applicable service level agreements (SLA) and underpinning contracts for services offered. Negotiates service performance levels taking into account the needs and capacity of customers and business.</p>
+</div><!-- END Competence A.2-->
+
+
+<!-- Level A.2_L3 -->
+<div itemscope itemtype="http://schema.org/LOCdefinition">
+  <h4 itemprop="id">A.2_L3</h4>
+  <p itemprop="description">Influences and prepares the final Service Level Agreement (SLA) and accounts for the final content.</p>
+</div>
+
+
+
+
+
+
+<!-- Area A association -->
+<div itemscope itemtype="http://schema.org/LOCassociation">
+  <meta itemprop="type" content="http://schema.org/LOCrel">
+  <meta itemprop="hasSubject" content="eu.ecompetences.ecf">
+  <meta itemprop="hasScheme" content="http://schema.org/LOCrel">
+  <meta itemprop="hasObject" content="A">
+</div>
+
+
+<!-- Competence A.2 association -->
+<div itemscope itemtype="http://schema.org/LOCassociation">
+  <meta itemprop="type" content="http://schema.org/LOCrel">
+  <meta itemprop="hasSubject" content="A">
+  <meta itemprop="hasScheme" content="http://schema.org/LOCrel">
+  <meta itemprop="hasObject" content="A.2">
+</div>
+    
+
+<!-- Level A.2_L3 association -->
+<div itemscope itemtype="http://schema.org/LOCassociation">
+  <meta itemprop="type" content="http://schema.org/LOCrel">
+  <meta itemprop="hasSubject" content="A.2">
+  <meta itemprop="hasScheme" content="http://schema.org/hasDefinedLevel">
+  <meta itemprop="hasObject" content="A.2_L3">
+</div>
+
+
+
+</body>
+</html>

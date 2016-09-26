@@ -1,0 +1,33 @@
+{
+	"provider_name": "Schema.org",
+	"provider_url": "http://schema.org/",
+	"endpoints": [
+		"LOCdefinition",
+		"LOCstructure",
+		"LOCassociation",
+		"primaryStructure",
+		"LOCrel",
+		"by",
+		"category",
+		"credit",
+		"level",
+		"topic",
+		"hasLocPart",
+		"isLOCPartOf",
+		"hasExample",
+		"isExampleOf",
+		"hasNecessaryPart",
+		"isNecessaryPartOf",
+		"hasOptionalPart",
+		"isOptionalPartOf",
+		"hasDefinedLevel",
+		"isDefinedLevelOf",
+		"closeMatch",
+		"exactMatch",
+		"hasPreRequisite",
+		"isPrerequisiteOf",
+		"replaces",
+		"isReplacedBy",
+		"related"
+	]
+}
