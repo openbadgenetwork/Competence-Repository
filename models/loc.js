@@ -11,7 +11,7 @@ var LOCSchema = mongoose.Schema({
 	},
     type: String,
     title: String,
-    description: {},
+    description: String,
     abbr: String,
     extraID: String,
     language: {type: String, max: 2},
@@ -23,6 +23,11 @@ var LOCSchema = mongoose.Schema({
     issued: Date,
     validityStart: Date,
     validityEnd: Date,
+    hasLOCpart: [String],
+    hasExample: [String],
+    hasDefinedLevel: [String],
+    isDefinedLevelOf: [String],
+    isExampleOf: [String],
 }, options);
 
 /*

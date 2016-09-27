@@ -1,0 +1,441 @@
+{
+  "@context": 
+  {
+    "abbr": 
+    {
+      "@id": "http://purl.org/net/inloc/abbr",
+      "@container": "@language"
+    },
+    "combinationRules": 
+    {
+      "@id": "http://purl.org/net/inloc/combinationRules",
+      "@container": "@language"
+    },
+    "created": 
+    {
+      "@id": "http://purl.org/net/inloc/created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "description": 
+    {
+      "@id": "http://purl.org/net/inloc/description",
+      "@container": "@language"
+    },
+    "issued": 
+    {
+      "@id": "http://purl.org/net/inloc/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "label": 
+    {
+      "@id": "http://purl.org/net/inloc/label",
+      "@container": "@language"
+    },
+    "modified": 
+    {
+      "@id": "http://purl.org/net/inloc/modified",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "number":
+    {
+      "@id": "http://purl.org/net/inloc/number",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal" 
+    },
+    "rights": 
+    {
+      "@id": "http://purl.org/net/inloc/rights",
+      "@container": "@language"
+    },
+    "title": 
+    {
+      "@id": "http://purl.org/net/inloc/title",
+      "@container": "@language"
+    },
+    "validityEnd": 
+    {
+      "@id": "http://purl.org/net/inloc/validityEnd",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "validityStart": 
+    {
+      "@id": "http://purl.org/net/inloc/validityStart",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasLOCpart":
+    {
+      "@id": "http://purl.org/net/inloc/hasLOCpart",
+      "@type": "@id"
+    },
+    "hasExample":
+    {
+      "@id": "http://www.cetis.org.uk/inloc/hasExample",
+      "@type": "@id"
+    },
+    "hasDefinedLevel":
+    {
+      "@id": "http://www.cetis.org.uk/inloc/hasDefinedLevel",
+      "@type": "@id"
+    },
+    "@vocab": "http://purl.org/net/inloc/",
+    "subPropertyOf":
+    {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type": "@id"
+    },
+    "comment": null
+  },
+  "@graph":
+  [
+    {
+      "@type": "LOCstructure",
+      "@id": "http://www.ecompetences.eu/uri/e-CF",
+      "title":"e-CF",
+      "description": "A common European framework for ICT Professionals in all industry sectors",
+      "created": "2010-08-17T00:00:00",
+      "hasLOCpart":
+      [
+        "http://www.ecompetences.eu/uri/A",
+        "http://www.ecompetences.eu/uri/B",
+        "http://www.ecompetences.eu/uri/C",
+        "http://www.ecompetences.eu/uri/D",
+        "http://www.ecompetences.eu/uri/E"
+      ]
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A",
+      "@type": "LOCdefinition",
+      "title": "A. PLAN",
+      "hasLOCpart":
+      [
+        "http://www.ecompetences.eu/uri/A1",
+        "http://www.ecompetences.eu/uri/A2",
+        "http://www.ecompetences.eu/uri/A3",
+        "http://www.ecompetences.eu/uri/A4",
+        "http://www.ecompetences.eu/uri/A5",
+        "http://www.ecompetences.eu/uri/A6",
+        "http://www.ecompetences.eu/uri/A7",
+        "http://www.ecompetences.eu/uri/A8",
+        "http://www.ecompetences.eu/uri/A9"
+      ]
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/B",
+      "@type": "LOCdefinition",
+      "title": "B. BUILD",
+      "hasLOCpart":
+      [
+        "http://www.ecompetences.eu/uri/B1",
+        "http://www.ecompetences.eu/uri/B2",
+        "http://www.ecompetences.eu/uri/B3",
+        "http://www.ecompetences.eu/uri/B4",
+        "http://www.ecompetences.eu/uri/B5",
+        "http://www.ecompetences.eu/uri/B6"
+      ]
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/C",
+      "@type": "LOCdefinition",
+      "title": "C. RUN",
+      "hasLOCpart":
+      [
+        "http://www.ecompetences.eu/uri/C1",
+        "http://www.ecompetences.eu/uri/C2",
+        "http://www.ecompetences.eu/uri/C3",
+        "http://www.ecompetences.eu/uri/C4"
+      ]
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/D",
+      "@type": "LOCdefinition",
+      "title": "D. ENABLE",
+      "hasLOCpart":
+      [
+        "http://www.ecompetences.eu/uri/D1",
+        "http://www.ecompetences.eu/uri/D2",
+        "http://www.ecompetences.eu/uri/D3",
+        "http://www.ecompetences.eu/uri/D4",
+        "http://www.ecompetences.eu/uri/D5",
+        "http://www.ecompetences.eu/uri/D6",
+        "http://www.ecompetences.eu/uri/D7",
+        "http://www.ecompetences.eu/uri/D8",
+        "http://www.ecompetences.eu/uri/D9",
+        "http://www.ecompetences.eu/uri/D10",
+        "http://www.ecompetences.eu/uri/D11",
+        "http://www.ecompetences.eu/uri/D12"
+      ]
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/E",
+      "@type": "LOCdefinition",
+      "title": "E. MANAGE",
+      "hasLOCpart":
+      [
+        "http://www.ecompetences.eu/uri/E1",
+        "http://www.ecompetences.eu/uri/E2",
+        "http://www.ecompetences.eu/uri/E3",
+        "http://www.ecompetences.eu/uri/E4",
+        "http://www.ecompetences.eu/uri/E5",
+        "http://www.ecompetences.eu/uri/E6",
+        "http://www.ecompetences.eu/uri/E7",
+        "http://www.ecompetences.eu/uri/E8",
+        "http://www.ecompetences.eu/uri/E9"
+      ]
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A1",
+      "@type": "LOCdefinition",
+      "title": "A.1. IS and Business Strategy Alignment",
+      "description": "Anticipates long term business requirements, influences improvement of organisational process efficiency and effectivenes. Determines the IS model and the enterprise architecture in line with the organisation’s policy and ensures a secure environment. Makes strategic IS policy decisions for the enterprise, including sourcing strategies.",
+      "hasExample":
+      [
+        "http://www.ecompetences.eu/uri/A1_K1",
+        "http://www.ecompetences.eu/uri/A1_K2",
+        "http://www.ecompetences.eu/uri/A1_K3",
+        "http://www.ecompetences.eu/uri/A1_K4",
+        "http://www.ecompetences.eu/uri/A1_S1",
+        "http://www.ecompetences.eu/uri/A1_S2",
+        "http://www.ecompetences.eu/uri/A1_S3",
+        "http://www.ecompetences.eu/uri/A1_S4"
+      ],
+      "hasDefinedLevel":
+      [
+        "http://www.ecompetences.eu/uri/A1_L4",
+        "http://www.ecompetences.eu/uri/A1_L5"
+      ]
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A2",
+      "@type": "LOCdefinition",
+      "title": "A.2. Service Level Management",
+      "description": "Defines, validates and makes applicable service level agreements (SLAs) and underpinning contracts for services offered. Negotiates service performance levels taking into account the needs and capacity of stakeholders and business. "
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A3",
+      "@type": "LOCdefinition",
+      "title": "A.3. Business Plan Development",
+      "description": "Addresses the design and structure of a business or product plan including the identification of alternative approaches as well as return on investment propositions. Considers the possible and applicable sourcing models. Presents cost benefit analysis and reasoned arguments in support of the selected strategy. Ensures compliance with business and technology strategies. Communicates and sells business plan to relevant stakeholders and addresses political, financial, and organisational interests. "
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A4",
+      "@type": "LOCdefinition",
+      "title": "A.4. Product / Service Planning",
+      "description": "Analyses and defines current and target status. Estimates cost effectiveness, points of risk, opportunities, strengths and weaknesses, with a critical approach. Creates structured plans; establishes time scales and milestones, ensuring optimisation of activities and resources. Manages change requests. Defines delivery quantity and provides an overview of additional documentation requirements. Specifies correct handling of products, including legal issues, in accordance with current regulations."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A5",
+      "@type": "LOCdefinition",
+      "title": "A.5. Architecture Design",
+      "description": "Specifies, refines, updates and makes available a formal approach to implement solutions, necessary to develop and operate the IS architecture. Identifies change requirements and the components involved: hardware, software, applications, processes, information and technology platform. Takes into account interoperability, scalability, usability and security. Maintains alignment between business evolution and technology developments. "
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A6",
+      "@type": "LOCdefinition",
+      "title": "A.6. Application Design",
+      "description": "Analyses, specifies, updates and makes available a model to implement applications in accordance with IS policy and user / customer needs. Selects appropriate technical options for application design, optimising the balance between cost and quality. Designs data structures and builds system structure models according to analysis results through modelling languages. Ensures that all aspects take account of interoperability, usability and security. Identifies a common reference framework to validate the models with representative users, based upon development models (e.g. iterative approach)."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A7",
+      "@type": "LOCdefinition",
+      "title": "A.7. Technology Trend Monitoring",
+      "description": "Investigates latest ICT technological developments to establish understanding of evolving technologies. Devises innovative solutions for integration of new technology into existing products, applications or services or for the creation of new solutions."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A8",
+      "@type": "LOCdefinition",
+      "title": "A.8. Sustainable Development",
+      "description": "Estimates the impact of ICT solutions in terms of eco responsibilities including energy consumption. Advises business and ICT stakeholders on sustainable alternatives that are consistent with the business strategy. Applies an ICT purchasing and sales policy which fulfills eco-responsibilities."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A9",
+      "@type": "LOCdefinition",
+      "title": "A.9. Innovating",
+      "description": "Devises creative solutions for the provision of new concepts, ideas, products or services. Deploys novel and open thinking to envision exploitation of technological advances to address business / society needs or research direction."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/B1",
+      "@type": "LOCdefinition",
+      "title": "B.1. Application Development",
+      "description": "Interprets the application design to develop a suitable application in accordance with customer needs. Adapts existing solutions by e.g. porting an application to another operating system. Codes, debugs, tests and documents and communicates product development stages. Selects appropriate technical options for development such as reusing, improving or reconfiguration of existing components. Optimises efficiency, cost and quality. Validates results with user representatives, integrates and commissions the overall solution. "
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/B2",
+      "@type": "LOCdefinition",
+      "title": "B.2. Component Integration",
+      "description": "Integrates hardware, software or sub system components into an existing or a new system. Complies with established processes and procedures such as, configuration management and package maintenance. Takes into account the compatibility of existing and new modules to ensure system integrity, system interoperability and information security. Verifies and tests system capacity and performance and documentation of successful integration. "
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/B3",
+      "@type": "LOCdefinition",
+      "title": "B.3. Testing",
+      "description": "Constructs and executes systematic test procedures for ICT systems or customer usability requirements to establish compliance with design specifications. Ensures that new or revised components or systems perform to expectation. Ensures meeting of internal, external, national and international standards; including health and safety, usability, performance, reliability or compatibility. Produces documents and reports to evidence certification requirements."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/B4",
+      "@type": "LOCdefinition",
+      "title": "B.4. Solution Deployment",
+      "description": "Following predefined general standards of practice carries out planned necessary interventions to implement solution, including installing, upgrading or decommissioning. Configures hardware, software or network to ensure interoperability of system components and debugs any resultant faults or incompatibilities. Engages additional specialist resources if required, such as third party network providers. Formally hands over fully operational solution to user and completes documentation recording all relevant information, including equipment addressees, configuration and performance data."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/B5",
+      "@type": "LOCdefinition",
+      "title": "B.5. Documentation Production",
+      "description": "Produces documents describing products, services, components or applications to establish compliance with relevant documentation requirements. Selects appropriate style and media for presentation materials. Creates templates for document-management systems. Ensures that functions and features are documented in an appropriate way. Ensures that existing documents are valid and up to date."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/B6",
+      "@type": "LOCdefinition",
+      "title": "B.6. Systems Engineering",
+      "description": "Engineers software and / or hardware components to meet solution requirements such as specifications, costs, quality, time, energy efficiency, information security and data protection. Follows a systematic methodology to analyse and build the required components and interfaces. Builds system structure models and conducts system behavior simulation. Performs unit and system tests to ensure requirements are met."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/C1",
+      "@type": "LOCdefinition",
+      "title": "C.1. User Support",
+      "description": "Responds to user requests and issues, recording relevant information. Assures resolution or escalates incidents and optimises system performance in accordance with predefined service level agreements (SLAs). Understands how to monitor solution outcome and resultant customer satisfaction."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/C2",
+      "@type": "LOCdefinition",
+      "title": "C.2. Change Support",
+      "description": "Implements and guides the evolution of an ICT solution. Ensures efficient control and scheduling of software or hardware modifications to prevent multiple upgrades creating unpredictable outcomes. Minimises service disruption as a consequence of changes and adheres to defined service level agreement (SLA). Ensures consideration and compliance with information security procedures."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/C3",
+      "@type": "LOCdefinition",
+      "title": "C.3. Service Delivery",
+      "description": "Ensures service delivery in accordance with established service level agreements (SLA‘s). Takes proactive action to ensure stable and secure applications and ICT infrastructure to avoid potential service disruptions, attending to capacity planning and to information security. Updates operational document library and logs all service incidents. Maintains monitoring and management tools (i.e. scripts, procedures). Maintains IS services. Takes proactive measures."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/C4",
+      "@type": "LOCdefinition",
+      "title": "C.4. Problem Management",
+      "description": "Identifies and resolves the root cause of incidents. Takes a proactive approach to avoidance or identification of root cause of ICT problems. Deploys a knowledge system based on recurrence of common errors. Resolves or escalates incidents. Optimises system or component performance."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/D1",
+      "@type": "LOCdefinition",
+      "title": "D.1. Information Security Strategy Development",
+      "description": "Defines and makes applicable a formal organisational strategy, scope and culture to maintain safety and security of information from external and internal threats, i.e. digital forensic for corporate investigations or intrusion investigation. Provides the foundation for Information Security Management, including role identification and accountability. Uses defined standards to create objectives for information integrity, availability, and data privacy."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/D2",
+      "@type": "LOCdefinition",
+      "title": "D.2. ICT Quality Strategy Development",
+      "description": "Defines, improves and refines a formal strategy to satisfy customer expectations and improve business performance (balance between cost and risks). Identifies critical processes influencing service delivery and product performance for definition in the ICT quality management system. Uses defined standards to formulate objectives for service management, product and process quality. Identifies ICT quality management accountability. "
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/D3",
+      "@type": "LOCdefinition",
+      "title": "D.3. Education and Training Provision",
+      "description": "Defines and implements ICT training policy to address organisational skill needs and gaps. Structures, organises and schedules training programmes and evaluates training quality through a feedback process and implements continuous improvement. Adapts training plans to address changing demand."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/D4",
+      "@type": "LOCdefinition",
+      "title": "D.4. Purchasing",
+      "description": "Applies a consistent procurement procedure, including deployment of the following sub processes: specification requirements, supplier identification, proposal analysis, evaluation of the energy efficiency and environmental compliance of products, suppliers and their processes, contract negotiation, supplier selection and contract placement. Ensures that the entire purchasing process is fit for purpose, adds business value to the organisation compliant to legal and regulatory requirements."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/D5",
+      "@type": "LOCdefinition",
+      "title": "D.5. Sales Proposal Development",
+      "description": "Develops technical proposals to meet customer solution requirements and provide sales personnel with a competitive bid. Underlines the energy efficiency and environmental impact related to a proposal. Collaborates with colleagues to align the service or product solution with the organisation’s capacity to deliver."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/D6",
+      "@type": "LOCdefinition",
+      "title": "D.6. Channel Management",
+      "description": "Develops the strategy for managing third party sales outlets. Ensures optimum commercial performance of the value-added resellers (VARs) channel through the provision of a coherent business and marketing strategy. Defines the targets for volume, geographic coverage and the industry sector for VAR engagements and structures incentive programmes to achieve complimentary sales results."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/D7",
+      "@type": "LOCdefinition",
+      "title": "D.7. Sales Management",
+      "description": "Drives the achievement of sales results through the establishment of a sales strategy. Demonstrates the added value of the organisation’s products and services to new or existing customers and prospects. Establishes a sales support procedure providing efficient response to sales enquiries, consistent with company strategy and policy. Establishes a systematic approach to the entire sales process, including understanding customer needs, forecasting, prospect evaluation, negotiation tactics and sales closure."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/D8",
+      "@type": "LOCdefinition",
+      "title": "D.8. Contract Management",
+      "description": "Provides and negotiates contract in accordance with organisational processes. Ensures that contract and deliverables are provided on time, meet quality standards, and conform to compliance requirements. Addresses non-compliance, escalates significant issues, drives recovery plans and if necessary amends contracts. Maintains budget integrity. Assesses and addresses supplier compliance to legal, health and safety and security standards. Actively pursues regular supplier communication."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/D9",
+      "@type": "LOCdefinition",
+      "title": "D.9. Personnel Development",
+      "description": "Diagnoses individual and group competence, identifying skill needs and skill gaps. Reviews training and development options and selects appropriate methodology taking into account the individual, project and business requirements. Coaches and / or mentors individuals and teams to address learning needs."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/D10",
+      "@type": "LOCdefinition",
+      "title": "D.10. Information and Knowledge Management",
+      "description": "Identifies and manages structured and unstructured information and considers information distribution policies. Creates information structure to enable exploitation and optimisation of information. Understands appropriate tools to be deployed to create, extract, maintain, renew and propagate business knowledge in order to capitalise from the information asset. "
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/D11",
+      "@type": "LOCdefinition",
+      "title": "D.11. Needs Identification",
+      "description": "Actively listens to internal / external customers, articulates and clarifies their needs. Manages the relationship with all stakeholders to ensure that the solution is in line with business requirements. Proposes different solutions (e.g. make-or-buy), by performing contextual analysis in support of user centered system design. Advises the customer on appropriate solution choices. Acts as an advocate engaging in the implementation or configuration process of the chosen solution."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/D12",
+      "@type": "LOCdefinition",
+      "title": "D.12. Digital Marketing",
+      "description": "Understands the fundamental principles of digital marketing. Distinguishes between the traditional and digital approaches. Appreciates the range of channels available. Assesses the effectiveness of the various approaches and applies rigorous measurement techniques. Plans a coherent strategy using the most effective means available. Understands the data protection and privacy issues involved in the implementation of the marketing strategy."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/E1",
+      "@type": "LOCdefinition",
+      "title": "E.1. Forecast Development",
+      "description": "Interprets market needs and evaluates market acceptance of products or services. Assesses the organisation’s potential to meet future production and quality requirements. Applies relevant metrics to enable accurate decision making in support of production, marketing, sales and distribution functions."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/E2",
+      "@type": "LOCdefinition",
+      "title": "E.2. Project and Portfolio Management",
+      "description": "Implements plans for a programme of change. Plans and directs a single or portfolio of ICT projects to ensure co-ordination and management of interdependencies. Orchestrates projects to develop or implement new, internal or externally defined processes to meet identified business needs. Defines activities, responsibilities, critical milestones, resources, skills needs, interfaces and budget, optimises costs and time utilisation, minimises waste and strives for high quality. Develops contingency plans to address potential implementation issues. Delivers project on time, on budget and in accordance with original requirements. Creates and maintains documents to facilitate monitoring of project progress. "
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/E3",
+      "@type": "LOCdefinition",
+      "title": "E.3. Risk Management",
+      "description": "Implements the management of risk across information systems through the application of the enterprise defined risk management policy and procedure. Assesses risk to the organisation’s business, including web, cloud and mobile resources. Documents potential risk and containment plans."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/E4",
+      "@type": "LOCdefinition",
+      "title": "E.4. Relationship Management",
+      "description": "Establishes and maintains positive business relationships between stakeholders (internal or external) deploying and complying with organisational processes. Maintains regular communication with customer / partner / supplier, and addresses needs through empathy with their environment and managing supply chain communications. Ensures that stakeholder needs, concerns or complaints are understood and addressed in accordance with organisational policy."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/E5",
+      "@type": "LOCdefinition",
+      "title": "E.5. Process Improvement",
+      "description": "Measures effectiveness of existing ICT processes. Researches and benchmarks ICT process design from a variety of sources. Follows a systematic methodology to evaluate, design and implement process or technology changes for measurable business benefit. Assesses potential adverse consequences of process change."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/E6",
+      "@type": "LOCdefinition",
+      "title": "E.6. ICT Quality Management",
+      "description": "Implements ICT quality policy to maintain and enhance service and product provision. Plans and defines indicators to manage quality with respect to ICT strategy. Reviews quality measures and recommends enhancements to influence continuous quality improvement."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/E7",
+      "@type": "LOCdefinition",
+      "title": "E.7. Business Change Management",
+      "description": "Assesses the implications of new digital solutions. Defines the requirements and quantifies the business benefits. Manages the deployment of change taking into account structural and cultural issues. Maintains business and process continuity throughout change, monitoring the impact, taking any required remedial action and refining approach."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/E8",
+      "@type": "LOCdefinition",
+      "title": "E.8. Information Security Management",
+      "description": "Implements information security policy. Monitors and takes action against intrusion, fraud and security breaches or leaks. Ensures that security risks are analysed and managed with respect to enterprise data and information. Reviews security incidents, makes recommendations for security policy and strategy to ensure continuous improvement of security provision."
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/E9",
+      "@type": "LOCdefinition",
+      "title": "E.9. IS Governance",
+      "description": "Defines, deploys and controls the management of information systems in line with business imperatives. Takes into account all internal and external parameters such as legislation and industry standard compliance to influence risk management and resource deployment to achieve balanced business benefit."
+    }
+  ]
+}

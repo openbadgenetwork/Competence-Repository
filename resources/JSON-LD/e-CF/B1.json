@@ -1,0 +1,24 @@
+{
+  "@id": "http://www.ecompetences.eu/uri/B1",
+  "@type": "LOCdefinition",
+  "title": "B.1. Service Level Management",
+  "description": "Defines, validates and makes applicable service level agreements (SLAs) and underpinning contracts 
+for services offered. Negotiates service performance levels taking into account the needs and capacity 
+of stakeholders and business. ",
+  "hasExample":
+  [
+    "http://www.ecompetences.eu/uri/A2_K1",
+    "http://www.ecompetences.eu/uri/A2_K2",
+    "http://www.ecompetences.eu/uri/A2_K3",
+    "http://www.ecompetences.eu/uri/A2_K4",
+    "http://www.ecompetences.eu/uri/A2_S1",
+    "http://www.ecompetences.eu/uri/A2_S2",
+    "http://www.ecompetences.eu/uri/A2_S3",
+    "http://www.ecompetences.eu/uri/A2_S4"
+  ],
+  "hasDefinedLevel":
+  [
+    "http://www.ecompetences.eu/uri/A2_L3",
+    "http://www.ecompetences.eu/uri/A2_L4"
+  ]
+},

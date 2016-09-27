@@ -119,7 +119,7 @@ module.exports = {
         var re = new RegExp(term, 'i');
 
         LOC.find().or([
-                {'description.en': {$regex: re}},
+                {'description': {$regex: re}},
                 {'title': {$regex: re}},
                 {'abbr': {$regex: re}}
             ]).exec(function(err, locs){

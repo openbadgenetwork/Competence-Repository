@@ -14,7 +14,11 @@ var fs = require('fs');
 
 //test MicroData
 var testDataSrc = './resources/MicroData_Websites/microTest3.html';
-var testJSONLDSrc = './resources/JSON-LD/example.jsonld';
+var testJSONLDSrc = './resources/JSON-LD/e-CF/e-CF.jsonld';
+//var testJSONLDSrc = './resources/JSON-LD/e-CF/A2.jsonld';
+//var testJSONLDSrc = './resources/JSON-LD/example.jsonld';
+
+
 
 //json-ld Data paths
 var doc = './resources/JSON-LD/doc.json';
@@ -56,10 +60,21 @@ var url = 'https://raw.githubusercontent.com/Mehns/Competence-Repository/master/
 //
 function convertJSONLD(compacted) {
 	var data = compacted['@graph'];
+  if(data === null){
+    data
+  }
+
+  //console.log("Data: "+data);
 
 	var str = JSON.stringify(data);
+
+  //console.log("Data: "+str);
+
 	str = str.replace(/@id/g, 'id');
 	str = str.replace(/@type/g, 'type');
+  str = str.replace(/@language/g, 'language');
+
+  //console.log("jsonld: "+str);
 
 	return JSON.parse(str);
 }
@@ -67,6 +82,8 @@ function convertJSONLD(compacted) {
 function saveAll(obj, callback) {
 
 	var error = [];
+
+  console.log("save db: "+JSON.stringify(obj));
 
 	obj.forEach(function(element){
 		LOC(element).save(function(err) {
@@ -105,12 +122,19 @@ exports.testJSONLD = function (req, res, next) {
 	fs.readFile(testJSONLDSrc, function (err, doc) {
 		if(err) return next(err);
 
+    //doc = JSON.stringify(doc);
+    //doc = doc.replace(/\n|\r/g, "");
+
 		jsonld.expand(JSON.parse(doc), function(err, expanded) {
 		  	if(err) return next(err);
+
+        console.log("Expanded: "+JSON.stringify(expanded));
 
 		  	jsonld.compact(expanded, context2, function(err, compacted) {
 		  		if(err) return next(err);
 		  		//console.log(JSON.stringify(compacted, null, 2));
+
+          console.log("Compacted: "+JSON.stringify(compacted));
 
 		  		var obj = convertJSONLD(compacted);
 
@@ -317,8 +341,7 @@ var context2 =
     },
     "description": 
     {
-      "@id": "http://purl.org/net/inloc/description",
-      "@container": "@language"
+      "@id": "http://purl.org/net/inloc/description"
     },
     "issued": 
     {
@@ -347,8 +370,7 @@ var context2 =
     },
     "title": 
     {
-      "@id": "http://purl.org/net/inloc/title",
-      "@container": "@language"
+      "@id": "http://purl.org/net/inloc/title"
     },
     "validityEnd": 
     {
@@ -363,6 +385,21 @@ var context2 =
     "hasLOCpart":
     {
       "@id": "http://purl.org/net/inloc/hasLOCpart",
+      "@type": "@id"
+    },
+    "hasExample":
+    {
+      "@id": "http://purl.org/net/inloc/hasExample",
+      "@type": "@id"
+    },
+    "hasDefinedLevel":
+    {
+      "@id": "http://purl.org/net/inloc/hasDefinedLevel",
+      "@type": "@id"
+    },
+    "isDefinedLevelOf":
+    {
+      "@id": "http://purl.org/net/inloc/isDefinedLevelOf",
       "@type": "@id"
     },
     "@vocab": "http://purl.org/net/inloc/",

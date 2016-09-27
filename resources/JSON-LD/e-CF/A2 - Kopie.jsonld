@@ -1,0 +1,182 @@
+{
+  "@context": 
+  {
+    "abbr": 
+    {
+      "@id": "http://purl.org/net/inloc/abbr",
+      "@container": "@language"
+    },
+    "combinationRules": 
+    {
+      "@id": "http://purl.org/net/inloc/combinationRules",
+      "@container": "@language"
+    },
+    "created": 
+    {
+      "@id": "http://purl.org/net/inloc/created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "description": 
+    {
+      "@id": "http://purl.org/net/inloc/description",
+      "@container": "@language"
+    },
+    "issued": 
+    {
+      "@id": "http://purl.org/net/inloc/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "label": 
+    {
+      "@id": "http://purl.org/net/inloc/label",
+      "@container": "@language"
+    },
+    "modified": 
+    {
+      "@id": "http://purl.org/net/inloc/modified",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "number":
+    {
+      "@id": "http://purl.org/net/inloc/number",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal" 
+    },
+    "rights": 
+    {
+      "@id": "http://purl.org/net/inloc/rights",
+      "@container": "@language"
+    },
+    "title": 
+    {
+      "@id": "http://purl.org/net/inloc/title",
+      "@container": "@language"
+    },
+    "validityEnd": 
+    {
+      "@id": "http://purl.org/net/inloc/validityEnd",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "validityStart": 
+    {
+      "@id": "http://purl.org/net/inloc/validityStart",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasLOCpart":
+    {
+      "@id": "http://purl.org/net/inloc/hasLOCpart",
+      "@type": "@id"
+    },
+    "hasExample":
+    {
+      "@id": "http://purl.org/net/inloc/hasExample",
+      "@type": "@id"
+    },
+    "hasDefinedLevel":
+    {
+      "@id": "http://purl.org/net/inloc/hasDefinedLevel",
+      "@type": "@id"
+    },
+    "@vocab": "http://purl.org/net/inloc/",
+    "subPropertyOf":
+    {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type": "@id"
+    },
+    "comment": null
+  },
+  "@graph":
+  [
+    {
+      "@id": "http://www.ecompetences.eu/uri/A2",
+      "@type": "LOCdefinition",
+      "title": {
+        "en": "A.2. Service Level Management"
+      },
+      "description": 
+      {
+        "en": "Defines, validates and makes applicable service level agreements (SLAs) and underpinning contracts for services offered. Negotiates Service performance levels taking into account the needs and capacity of stakeholders and business."
+      }
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A2_K1",
+      "@type": "LOCdefinition",
+      "title": {
+        "en": "K1"
+      }
+     ,
+      "description": {
+        "en": "SLA documentation"
+      }
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A2_K2",
+      "@type": "LOCdefinition",
+      "title": { 
+        "en": "K2"
+      },
+      "description": {
+        "en": "how to compare and interpret management data"
+      }      
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A2_K3",
+      "@type": "LOCdefinition",
+      "title": {
+        "en": "K3"
+      },
+      "description": {
+        "en": "the elements forming the metrics of service level agreements"  
+      }    
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A2_K4",
+      "@type": "LOCdefinition",
+      "title": {
+      "en": "K4"
+      },
+      "description": {
+        "en": "how service delivery infrastructures work"      
+      }
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A2_S1",
+      "@type": "LOCdefinition",
+      "title": {
+        "en": "S1"
+      },
+      "description": {
+        "en": "analyse service provision records"
+      }
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A2_S2",
+      "@type": "LOCdefinition",
+      "title": {
+        "en":"S2"
+      },
+      "description": {
+        "en":"evaluate service provision against SLA"
+      }  
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A2_S3",
+      "@type": "LOCdefinition",
+      "title": {
+        "en":"S3"
+      },
+      "description": {
+        "en":"negotiate realistic service level targets"
+      }      
+    },
+    {
+      "@id": "http://www.ecompetences.eu/uri/A2_S4",
+      "@type": "LOCdefinition",
+      "title": {
+        "en":"S4"
+      },
+      "description": {
+        "en":"use relevant quality management techniques"
+      }      
+    }
+  ]
+}
