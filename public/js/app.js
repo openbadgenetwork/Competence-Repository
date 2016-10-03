@@ -1,2 +1,2 @@
 
-angular.module('compRepoApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'FormCtrl', 'ScrapeCtrl', 'SearchCtrl', 'Competence', 'ApiService', 'TypeFilter']);
+angular.module('compRepoApp', ['ngRoute', 'appRoutes', 'angularModalService','ModalCtrl', 'ScrapeCtrl', 'SearchCtrl', 'TestCtrl', 'ApiService']);

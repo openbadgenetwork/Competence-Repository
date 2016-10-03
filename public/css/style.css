@@ -1,4 +1,16 @@
 
+.resultWell:default {
+	background-color: #ccc;
+}
+
+.resultWell:hover {
+	background-color: #66cc66;
+	cursor: pointer;
+	color: white;
+}
+
+
+
 .locStructure {
 	background: blue;
 	float: right;

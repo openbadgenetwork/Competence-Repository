@@ -16,17 +16,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "angular-modal-service": "^0.10.1",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "jsonld": "^0.4.11",
+    "jsonld-rdfa-parser": "^1.5.1",
     "mongoose": "^4.6.1",
     "morgan": "^1.7.0",
-    "neo4j": "^1.1.1",
-    "node-microdata-parser": "0.0.1",
-    "node-microdata-scraper": "0.0.4",
-    "node-neo4j": "^2.0.3",
-    "scrappy": "^0.2.3",
-    "semantic-schema-parser": "^0.1.0",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {

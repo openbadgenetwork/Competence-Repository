@@ -1,27 +1,17 @@
-angular.module('ScrapeCtrl', []).controller('ScrapeController', function($scope, $http){
+angular.module('ScrapeCtrl', []).controller('ScrapeController', function($scope, $http, ApiService){
 	
-	$scope.url = "";
-    $scope.microdataFields;
+	$scope.url = null;
+    $scope.message = null;
+    $scope.error = null;
 
-    //process Form
-    $scope.processForm = function(){
-    	$http({
-    		method: 'POST',
-    		url: '/url',
-    		data: {"url" : $scope.url}   		
-    	})
-    	.success(function(data){
-    		console.log(data);
-    		$scope.microdataFields = data;
-    		$scope.message = data.message;
 
-            //scraper 2 test
-            $scope.response = data;
-    	})
-
-    	.error(function (error, status){
-    		$scope.error = error;
-    	});
-    };
-	
+    //Submit URL
+    $scope.submitURL = function(){
+        ApiService.submitURL($scope.url, function(err, result){
+            if(err){
+                $scope.error = err.error.message;
+            }
+            $scope.message = result.message;
+        });
+    };	
 });

@@ -1,0 +1,49 @@
+<div class="modal fade" >
+  <div class="modal-dialog modal-lg" >
+    <div class="modal-content">
+      
+      <div class="modal-body" ng-init="$scope.loadData()">
+        <button type="button" class="close"  ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>{{title}}</h3>
+        
+        <p>{{description}}</p>
+
+         
+
+
+      <!-- hasLOCPart Container -->
+      <div class="list-group" ng-show="parts.length > 0">
+        <a href="#" class="list-group-item active">PARTS<a>
+
+        <a href="#" ng-repeat="part in parts" class="list-group-item list-group-item-action">{{part.title.en}}</a>          
+      </div>
+
+
+      <!-- hasExamples Container -->
+      <div class="list-group" ng-show="examples.length > 0">
+        <a href="#" class="list-group-item active">EXAMPLES<a>
+
+        <a href="#" ng-repeat="example in examples" class="list-group-item list-group-item-action">{{example.description.en}}</a>          
+      </div>
+
+
+      <!-- hasDefinedLevel Container -->
+      <div class="list-group" ng-show="levels.length > 0">
+        <a href="#" class="list-group-item active">LEVELS<a>
+
+        <a href="#" ng-repeat="level in levels" class="list-group-item list-group-item-action">{{level.title.en}}</a>          
+      </div>
+        <br><br>
+        <label>URI:</label>
+        <input type="text" size="60" value="{{id}}">
+        <!-- <textarea rows="1" cols="60">{{id}}</textarea> -->
+
+      </div>
+      <div class="modal-footer">
+        
+
+        <button type="button" ng-click="close()" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>

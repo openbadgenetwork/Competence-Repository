@@ -1,52 +1,93 @@
-angular.module("ApiService", []).factory("Api", function($http){
+angular.module('ApiService', []).factory('ApiService', function($http){
 
 
-  var getAllCompetences = function() {
-        $http({
-            method: 'GET',
-            url: '/competences'         
-        })
-        .success(function(data){
-            return data;
-        });
+
+
+  //get single Competence
+  var getCompetence = function(id, callback){
+    $http({
+      method: 'POST',
+      url: '/competencies',
+      data: {"id" : id}         
+    })
+    .success(function(data){
+      console.log("result"+ data[0]);
+      callback(null, data);
+    })
+    .error(function (error, status){
+      callback(error);
+    });
+  };
+
+  //search
+  var search = function(query, callback){
+    $http({
+      method: 'POST',
+      url: '/search',
+      data: {"query" : query}
+    })
+    .success(function(data){
+      callback(null, data);
+    })
+    .error(function (error, status){
+      callback(error);
+    });
   };
 
 
-  var search = function(query, next){
-
-        $http({
-            method: 'POST',
-            url: '/search',
-            data: {"query" : query}         
-        })
-        .success(function(data){
-            next(data);
-        });
-    };
-
-
-
-
-
-/*
-  var queryAuthors = function(next){
-    //use a callback instead of a promise
-    authorResource.query({}, function(results){
-      var out = [];
-      //Underscore's "each" method
-      _.each(results,function(result){
-          //using our Author prototype above
-          out.push(Author(result));
-      });
-      next(result);
+  //submit URL for parsing data
+  var submitURL = function(url, callback){
+    $http({
+      method: 'POST',
+        url: '/submit',
+        data: {"url" : url}    
+    })
+    .success(function(data){
+      callback(null, data);
+    })
+    .error(function (error, status){
+      callback(error);
     });
-  }
-  */
+  };
+
+
+
+
+  //Clear Database for Test
+  var clearDB = function(callback){
+    $http({
+      method: 'DELETE',
+      url: '/competencies'    
+    })
+    .success(function(data){
+      callback(null, data);
+    })
+    .error(function (error, status){
+      callback(error);
+    });
+  };
+
+  //Fill Database for Test
+  var fillDB = function(callback){
+    $http({
+      method: 'GET',
+      url: '/submit/test'  
+    })
+    .success(function(data){
+      callback(null, data);
+    })
+    .error(function (error, status){
+      callback(error);
+    });
+  };
 
 
 
   return {
-    competences: getAllCompetences,
-    search: search
+    competence: getCompetence,
+    search: search,
+    submitURL: submitURL,
+    clearDB: clearDB,
+    fillDB: fillDB
   }
 });

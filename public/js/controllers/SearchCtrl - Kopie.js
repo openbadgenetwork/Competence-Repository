@@ -1,12 +1,14 @@
 angular.module('SearchCtrl', []).controller('SearchController', function($scope, $http, ApiService, ModalService){
 
-    $scope.query = null;
-    $scope.results = null;
+    $scope.formData;
+    $scope.query;
+    $scope.frameworks;
     $scope.error = null;
 
 
     $scope.showModal = function(id) {
- 
+        console.log("ID: "+id);
+
         ModalService.showModal({
           templateUrl: "../../views/modal.html",
           controller: "ModalCtrl",
@@ -17,7 +19,16 @@ angular.module('SearchCtrl', []).controller('SearchController', function($scope,
           modal.element.modal();
           modal.close();
         });
-    };   
+    };
+
+
+
+    $scope.getFrameworks = function(){
+        ApiService.frameworks(function(results){
+            $scope.frameworks = results;
+        });
+    };
+    
 
 
     $scope.search = function(){
@@ -29,5 +40,21 @@ angular.module('SearchCtrl', []).controller('SearchController', function($scope,
             $scope.results = results;
         });
     };
+
+
+    $scope.getAllCompetences = function() {
+        $http({
+            method: 'GET',
+            url: '/competencies'         
+        })
+        .success(function(data){
+            console.log(data);
+            $scope.results = data["@graph"];
+        })
+        .error(function (error, status){
+            $scope.errorURL = error;
+        });
+    };
+
 	
 });

@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <base href="/">
 
-    <title>Competence Repository</title>
+    <title>Kompetenz Verzeichnis</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <!-- CSS Custom-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font-Awesome, from CDN -->    
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
 
-    <!-- JS -->
+    <!-- jQuery, from CDN -->  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- Bootstrap, from CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+    <!-- Angular, from CDN -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>  
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    
 
-    <!-- ANGULAR CUSTOM -->
+    <!-- Angular Custom -->
     <script src="js/app.js"></script>
     <script src="js/appRoutes.js"></script>
-    <script src="js/controllers/FormCtrl.js"></script>
-    <script src="js/controllers/MainCtrl.js"></script>
     <script src="js/controllers/ScrapeCtrl.js"></script>
     <script src="js/controllers/SearchCtrl.js"></script>
+    <script src="js/controllers/ModalCtrl.js"></script>
+    <script src="js/controllers/TestCtrl.js"></script>
     <script src="js/services/ApiService.js"></script>
-    <script src="js/services/CartService.js"></script>
-    <script src="js/services/Competence.js"></script>
-    <script src="js/services/TypeFilter.js"></script>
+
+
+    <!-- Angular Libraries -->
+    <script src="js/libs/angular-modal-service/dst/angular-modal-service.min.js"></script>
+
     
 </head>
 <body ng-app="compRepoApp">
@@ -38,15 +48,14 @@
       <nav class="navbar navbar-default">
       <div class="container">
           <div class="navbar-header">
-              <a class="navbar-brand" href="/">Competence Repository</a>
+              <a class="navbar-brand" href="/">Kompetenz Verzeichnis</a>
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="home"><i class="fa fa-home"></i> Home</a></li>
-              <li><a href="search"><i class="fa fa-search"></i> Search</a></li>              
-              <li><a href="url"><i class="fa fa-plus"></i> Add Data</a></li>
-              <li><a href="form"><i class="fa fa-comment"></i> New Entry</a></li>
-              <li><a href="about"><i class="fa fa-shield"></i> About</a></li>
+              <li><a href="home"><i class="fa fa-home"></i> Start</a></li>
+              <li><a href="search"><i class="fa fa-search"></i> Suche</a></li>             
+              <li><a href="url"><i class="fa fa-plus"></i> Neuer Eintrag</a></li>
+              <li><a href="test"><i class="fa fa-flask"></i> Test</a></li>
           </ul>
       </div>
       </nav>

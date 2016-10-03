@@ -3,8 +3,7 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 	$routeProvider
 
 		.when('/home', {
-			templateUrl: 'views/home.html',
-			controller: 'MainController'
+			templateUrl: 'views/home.html'
 		})
 
 	    .when('/search', {
@@ -12,19 +11,15 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 	        controller: 'SearchController'
 	    })
 
-		.when('/about', {
-			templateUrl: 'views/about.html'
-		})
-
 		.when('/url', {
 			templateUrl: 'views/url.html',
 			controller: 'ScrapeController'
 		})
 
-	    .when('/form', {
-	        templateUrl: 'views/form.html',
-	        controller: 'FormController'
-	    });
+		.when('/test', {
+			templateUrl: 'views/test.html',
+			controller: 'TestController'
+		});
 
     $locationProvider.html5Mode(true);
 
