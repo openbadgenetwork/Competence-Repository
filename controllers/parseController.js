@@ -34,11 +34,11 @@ module.exports = {
    */
   importData: function (req, res, next) {
 
-    var url = req.params.url;
-    console.log("url "+url);
+    var url = req.body.url;
 
     parser.parse(url, function(err, obj){
       if(err){
+        //console.log(err);
         var error = new Error('No Competencies found under that URL.');
         error.status = 404;
         return next(error);
