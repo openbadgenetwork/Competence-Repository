@@ -8,9 +8,9 @@
     "neo4j"
   ],
   "author": "Christian Mehns",
-  "contributors": {
+  "contributors": [
     "Johannes Konert"
-  },
+  ],
   "license": "GPL",
   "main": "app.js",
   "private": false,
