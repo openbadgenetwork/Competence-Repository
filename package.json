@@ -1,5 +1,5 @@
 {
-  "name": "competence-repository",
+  "name": "obn-competency-directory",
   "version": "0.0.1",
   "description": "Searchable Repository for Competencies and Competence Frameworks.",
   "keywords": [
@@ -8,11 +8,14 @@
     "neo4j"
   ],
   "author": "Christian Mehns",
-  "license": "ISC",
+  "contributors": {
+    "Johannes Konert"
+  },
+  "license": "GPL",
   "main": "app.js",
-  "private": true,
+  "private": false,
   "scripts": {
-    "start": "node-dev app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
