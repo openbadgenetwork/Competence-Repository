@@ -1,1 +1,1 @@
-# Competence-Repository
+# Competencey Directory
