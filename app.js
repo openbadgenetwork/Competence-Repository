@@ -43,7 +43,7 @@ app.use(morgan('tiny'));
 app.use(restAPIchecks);
 
 // Routes ******************************************************
-app.get('/', function(req, res){res.sendFile(__dirname + '/public/index.html');});
+app.get(['/','/home', '/search', '/url', '/test'], function(req, res){res.sendFile(__dirname + '/public/index.html');});
 app.use('/', routes);
 
 

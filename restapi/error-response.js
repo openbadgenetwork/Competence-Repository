@@ -11,7 +11,7 @@
  * @type {Function}
  */
 "use strict";
-var logger = require('debug')('me2:error-response');
+var logger = require('debug')('obn:error-response');
 
 module.exports = function registerErrorHandlers(app) {
     // development error handler

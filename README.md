@@ -28,7 +28,7 @@ The client app is a SPA based on AngularJS. A REST API  is used to communicate w
 ## How to use it 
 
 ### Import Data
-- Paste an URL in "Neuer Eintrag" (new entry).
+- Paste an URL in "Add Entry".
 As an example the following URL can be used: https://raw.githubusercontent.com/openbadgenetwork/competence-directory/master/resources/RDFa_Websites/e-CF.html
 This website contains parts of the [European Competence Framework (e-CF)](http://www.ecompetences.eu/) structured in the InLOC standard, formatted in RDFa.
 
