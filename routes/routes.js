@@ -1,6 +1,7 @@
 /** This module defines the routes
  *
  * @author Christian Mehns
+ * @author Johannes Konert
  * @module routes/routes
  * @type {Router}
  */

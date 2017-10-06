@@ -5,7 +5,6 @@
  * - Request accepts JSOn as reply content-type
  *
  * @author Johannes Konert
- * @licence CC BY-SA 4.0
  *
  * @module restapi/request-checks
  * @type {Router}

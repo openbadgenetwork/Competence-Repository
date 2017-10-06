@@ -1,6 +1,7 @@
 /** This module defines the model for the LOCs
  *
- * @author Christian Mehns *
+ * @author Christian Mehns
+ * @author Johannes Konert
  * @module models/locModel
  * @type {Model}
  */

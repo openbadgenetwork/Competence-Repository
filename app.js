@@ -1,5 +1,6 @@
 /** Main app for server to start the competency repository *  
  * @author Christian Mehns
+ * @author Johannes Konert
  */
 
 "use strict";

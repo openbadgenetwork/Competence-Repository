@@ -1,6 +1,6 @@
 /** This module defines the controller for the LOCs
  *
- * @author Christian Mehns *
+ * @author Christian Mehns
  * @module controllers/locController
  * @type {Controller}
  */

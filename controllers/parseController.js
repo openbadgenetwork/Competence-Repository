@@ -1,7 +1,7 @@
 /** This module defines the controller to extract semantic data from websites,
  *  and save it to the db  
  *
- * @author Christian Mehns *
+ * @author Christian Mehns
  * @module controllers/locController
  * @type {Controller}
  */

@@ -4,7 +4,6 @@
  * You call the returned function with an app instance
  *
  *  @author Johannes Konert
- * @licence  CC BY-SA 4.0
  *
  *
  * @module restapi/error-response
